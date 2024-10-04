@@ -23,7 +23,8 @@
 ":set so=999 "scrolloff option to keep cursor in the middle
 "show tab characters, useful for Makefile coding
 :set list
-:set listchars=tab:\|\ 
+:set listchars=tab:\|\
+":colorscheme gruvbox
 
 "gvim
 :set go-=m "remove menu bar
@@ -38,13 +39,13 @@
 "F3 
 "F4
 
-"F5 Load C++ Template
+"F5 Load C++ Template (make sure to specify right path on your PC)
 autocmd FileType cpp noremap <F5> gg:r ~/comp_prog/templates/template.cpp<CR>
 autocmd FileType cpp inoremap <F5> gg:r ~/comp_prog/templates/template.cpp<CR>
 
-"F6 
+"F6
 
-"F7 compile without running 
+"F7 compile without running
 autocmd FileType cpp noremap <F7> <ESC> :w <CR> :!g++ -fsanitize=address -std=c++17 -Wall -Wextra -Wshadow -DONPC -O2 -o %< % <CR>
 autocmd FileType cpp inoremap <F7> <ESC> :w <CR> :!g++ -fsanitize=address -std=c++17 -Wall -Wextra -Wshadow -DONPC -O2 -o %< % <CR>
 
@@ -52,20 +53,20 @@ autocmd FileType cpp inoremap <F7> <ESC> :w <CR> :!g++ -fsanitize=address -std=c
 autocmd FileType cpp noremap <F8> <ESC> :w <CR> :!g++ -fsanitize=address -std=c++17 -DONPC -O2 -o %< % && ./%< < inp<CR>
 autocmd FileType cpp inoremap <F8> <ESC> :w <CR> :!g++ -fsanitize=address -std=c++17 -DONPC -O2 -o %< % && ./%< < inp<CR>
 
-"F9 compile and run without inp 
+"F9 compile and run without inp
 autocmd FileType cpp noremap <F9> <ESC> :w <CR> :!g++ -fsanitize=address -std=c++17 -Wall -Wextra -Wshadow -DONPC -O2 -o %< % && ./%< <CR>
 autocmd FileType cpp inoremap <F9> <ESC> :w <CR> :!g++ -fsanitize=address -std=c++17 -Wall -Wextra -Wshadow -DONPC -O2 -o %< % && ./%< <CR>
 
 "compile with clang
-"autocmd FileType cpp noremap <F10> <ESC> :w <CR> :!clang++ -fsanitize=address -std=c++17 -Wall -Wextra-Wshadow -DONPC -O2 -o %< % && ./%< < inp<CR>
-"autocmd FileType cpp inoremap <F10> <ESC> :w <CR> :!clang++ -fsanitize=address -std=c++17 -Wall -Wextra-Wshadow -DONPC -O2 -o %< % && ./%< <inp<CR>
+"autocmd FileType cpp noremap <F10> <ESC> :w <CR> :!clang++ -fsanitize=address -std=c++17 -Wall -Wextra -Wshadow -DONPC -O2 -o %< % && ./%< < inp<CR>
+"autocmd FileType cpp inoremap <F10> <ESC> :w <CR> :!clang++ -fsanitize=address -std=c++17 -Wall -Wextra -Wshadow -DONPC -O2 -o %< % && ./%< <inp<CR>
 
 "F10 compile and run with input from inp
-autocmd FileType cpp noremap <F10> <ESC> :w <CR> :!g++ -fsanitize=address -std=c++17 -Wall -Wextra-Wshadow -DONPC -O2 -o %< % && ./%< < inp<CR>
-autocmd FileType cpp inoremap <F10> <ESC> :w <CR> :!g++ -fsanitize=address -std=c++17 -Wall -Wextra-Wshadow -DONPC -O2 -o %< % && ./%< <inp<CR>
+autocmd FileType cpp noremap <F10> <ESC> :w <CR> :!g++ -fsanitize=address -std=c++17 -Wall -Wextra -Wshadow -DONPC -O2 -o %< % && ./%< < inp<CR>
+autocmd FileType cpp inoremap <F10> <ESC> :w <CR> :!g++ -fsanitize=address -std=c++17 -Wall -Wextra -Wshadow -DONPC -O2 -o %< % && ./%< <inp<CR>
 
-"F11 
-"F12  
+"F11
+"F12
 
 :set textwidth=120
 :set tags=~/tags,./tags
