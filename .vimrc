@@ -25,6 +25,7 @@
 :set list
 :set listchars=tab:\|\
 ":colorscheme gruvbox
+:set guifont=Monaco:h18
 
 "gvim
 :set go-=m "remove menu bar
