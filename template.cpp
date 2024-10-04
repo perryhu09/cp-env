@@ -25,7 +25,6 @@ int32_t main(){
         #ifdef ONPC
             cout << "__________________________" << endl;
         #endif
-
     }
     #ifdef ONPC
         cerr << endl << "finished in " << clock() * 1.0 / CLOCKS_PER_SEC << " sec" << endl;
