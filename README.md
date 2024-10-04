@@ -7,4 +7,8 @@
 1. Go to Path: usr/local/include/bits
 2. Create file stdc++.h
 3. Paste content of the file from an online repo
-4. Restart editor and include error should go away 
+4. Restart editor and include error should go away
+
+Note: Standard libraries such as iostream may have errors, 
+go into stdc++.h and copy and paste the second 'C++' section 
+into the first and it will work
