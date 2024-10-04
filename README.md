@@ -1,8 +1,7 @@
 # cp-env
 .vimrc & c++ templates
 
-### Notes
-- When loading templates using F5 make sure to have the right file path
+Note: When loading templates using F5 make sure to have the right file path
 
 ## How to fix bits/stdc++ not found on MacOS
 - Manually create a bits/stdc++.h file on your system 
