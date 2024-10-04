@@ -22,7 +22,7 @@ int32_t main(){
         if(solve()){
             break;
         }
-        #ifdef ONOPC
+        #ifdef ONPC
             cout << "__________________________" << endl;
         #endif
 
