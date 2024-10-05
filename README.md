@@ -18,4 +18,4 @@ Make sure to have the right file path when loading templates using F5
 3. Paste content of the file from an online repo
 4. Restart editor and include error should go away
 
-Note: Standard libraries such as iostream may have errors, go into stdc++.h and copy and paste the second 'C++' section into the first and it will work
+Note: If standard libraries such as iostream generate errors (ie: identifier "cin" is not defined), go into stdc++.h and copy and paste the second 'C++' section into the first and it will work.
