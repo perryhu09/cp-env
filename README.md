@@ -3,7 +3,7 @@
 
 Make sure to have the right file path when loading templates using F5
 
-#### Function Key Mappings
+### Function Key Mappings
 F5 - Load C++ Template
 F7 - Compile without running
 F8 - Compile and run with input from "inp" without warning flags 
