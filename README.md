@@ -10,7 +10,7 @@ Make sure to have the right file path when loading templates using F5
 - F9 - Compile and run without input file
 - F10 - Compile and run file with input from "inp"
 
-## How to fix bits/stdc++ not found on MacOS
+## How to fix bits/stdc++.h not found on MacOS
 - Manually create a bits/stdc++.h file on your system 
 
 1. Go to Path: /usr/local/include 
