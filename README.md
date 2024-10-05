@@ -13,7 +13,7 @@ Make sure to have the right file path when loading templates using F5
 ## How to fix bits/stdc++ not found on MacOS
 - Manually create a bits/stdc++.h file on your system 
 
-1. Go to Path: usr/local/include/bits
+1. Go to Path: usr/local/include/bits (may vary)
 2. Create file stdc++.h
 3. Paste content of the file from an online repo
 4. Restart editor and include error should go away
