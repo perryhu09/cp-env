@@ -3,6 +3,13 @@
 
 Make sure to have the right file path when loading templates using F5
 
+#### Function Key Mappings
+F5 - Load C++ Template
+F7 - Compile without running
+F8 - Compile and run with input from "inp" without warning flags 
+F9 - Compile and run without input file
+F10 - Compile and run file with input from "inp"
+
 ## How to fix bits/stdc++ not found on MacOS
 - Manually create a bits/stdc++.h file on your system 
 
