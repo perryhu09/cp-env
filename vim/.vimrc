@@ -6,7 +6,7 @@
 "this option will disable Makefile
 "which depends on tabs to work
 :set expandtab "to enter a real tab character use Ctrl-V<Tab> key sequence
-:set nu
+:set relativenumber
 :set autoindent
 ":set cindent
 ":set smartindent
@@ -37,8 +37,10 @@
 
 "F1
 "F2
-"F3 
-"F4
+"F3
+"F4 Load USACO C++ Template
+autocmd Filetype cpp noremap <F4> gg:r ~/comp_prog/templates/usaco_template.cpp<CR>
+autocmd Filetype cpp inoremap <F4> gg:r ~/comp_prog/templates/usaco_template.cpp<CR>
 
 "F5 Load C++ Template (make sure to specify right path on your PC)
 autocmd FileType cpp noremap <F5> gg:r ~/comp_prog/templates/template.cpp<CR>
